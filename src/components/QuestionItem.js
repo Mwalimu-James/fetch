@@ -14,7 +14,7 @@ function QuestionItem({ question, onDeleteClick, onAnswerChange }) {
   }
 
   function handleAnswerChange(event) {
-    onAnswerChange(id, parseInt(event.target.value));
+    onAnswerChange(id, parseInt(event.target.value, 10));
   }
 
   return (

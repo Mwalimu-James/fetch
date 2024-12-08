@@ -19,6 +19,7 @@ function QuestionForm(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
+    console.log(formData);
     fetch("http://localhost:4000/questions", {
       method: "POST",
       headers: {
@@ -39,7 +40,7 @@ function QuestionForm(props) {
 
   return (
     <section>
-      <h1>Add New Question</h1>
+      <h1>New Question</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Prompt:
